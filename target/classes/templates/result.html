@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body bgcolor="#cbe2e7">
+	
+    <table border="1" align="center"> 
+    <th>Last 24 hours</th>
+    <th> Issues open more than 24 hours but less than 7 days</th>
+    <th>Issues opened more than 7 days ago</th>
+    <tr>
+    <td align="center"> <p th:text="${last_24_hour}" /></td>
+    <td align="center"> <p th:text="${last_24_to_7_days}" /></td>
+	<td align="center"><p th:text="${more_than_7}" /></td>
+	</tr>
+	</table>
+</body>
+</html>
