@@ -1,0 +1,1 @@
+In this project, I have written rest api using Spring MVC. The Apis internall call the Api's provided  by Github using the Github client to get user info such as number of open issues corrsponding to a user, closed issues etc.
