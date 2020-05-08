@@ -4,7 +4,7 @@
   <groupId>git</groupId>
   <artifactId>issue</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-   
+  <packaging>war</packaging>
     
    <parent>
         <groupId>org.springframework.boot</groupId>
@@ -53,6 +53,14 @@
   <build>
 
     <plugins>
+    	<plugin>
+    	<artifactId>maven-war-plugin</artifactId>
+		<version>2.4</version>
+		<configuration>
+			<warSourceDirectory>WebContent</warSourceDirectory>
+			<failOnMissingWebXml>false</failOnMissingWebXml>
+		</configuration>
+		</plugin>
       <plugin>
         <groupId>com.heroku.sdk</groupId>
         <artifactId>heroku-maven-plugin</artifactId>
